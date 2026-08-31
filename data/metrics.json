@@ -1,0 +1,50 @@
+{
+  "best_model_by_test_mae": "hist_gradient_boosting",
+  "dataset": {
+    "feature_names": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude"
+    ],
+    "features": 8,
+    "name": "California Housing",
+    "rows": 20640,
+    "source": "scikit-learn fetch_california_housing",
+    "target": "MedHouseVal"
+  },
+  "evaluation": {
+    "cv_folds": 5,
+    "cv_scope": "training split only",
+    "random_seed": 42,
+    "test_ratio": 0.2,
+    "train_ratio": 0.8
+  },
+  "models": {
+    "dummy_median": {
+      "cv_mae_mean": 0.8859659392193981,
+      "cv_mae_std": 0.009233323116431774,
+      "test_mae": 0.8740399224806202,
+      "test_r2": -0.050208628996205595,
+      "test_rmse": 1.1731167105035603
+    },
+    "hist_gradient_boosting": {
+      "cv_mae_mean": 0.3164997217974229,
+      "cv_mae_std": 0.007303148837772925,
+      "test_mae": 0.3110552128758936,
+      "test_r2": 0.8347108310143663,
+      "test_rmse": 0.4653991953632404
+    },
+    "linear_regression": {
+      "cv_mae_mean": 0.5290607356851638,
+      "cv_mae_std": 0.009383104376332075,
+      "test_mae": 0.5332001304956555,
+      "test_r2": 0.575787706032451,
+      "test_rmse": 0.7455813830127763
+    }
+  }
+}

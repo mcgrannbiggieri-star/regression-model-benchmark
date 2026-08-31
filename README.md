@@ -2,6 +2,8 @@
 
 An **independent portfolio benchmark** comparing a transparent baseline, a linear model, and a nonlinear model on the public California Housing dataset. The project emphasizes leakage control, reproducibility, and evidence-backed model comparison rather than a hand-picked headline score.
 
+> **Publication context (August 2026):** This repository was published as part of a curated, privacy-safe portfolio release. Its GitHub creation date records the public release, not when every underlying task was performed.
+
 ## Verified results
 
 Dataset: 20,640 records × 8 features. The workflow uses an **80/20** holdout split with **random seed 42**. Five-fold cross-validation runs only on the training split.
@@ -55,4 +57,3 @@ This project demonstrates disciplined model evaluation, not production deploymen
 ## License
 
 Original code and documentation are MIT-licensed. The California Housing dataset is fetched through scikit-learn and remains subject to its source terms.
-
